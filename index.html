@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>R.M Erlangga — PORTFOLIO - WEB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ============ MUSIC TOGGLE ============ -->
+  <audio id="bgMusic" src="background.mp3" loop preload="none"></audio>
+  <button class="music-toggle" id="musicToggle" title="Nyala/matiin musik">🔈</button>
+
+  <div class="aurora"></div>
+  <div class="orb-field">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+    <div class="orb o4"></div>
+  </div>
+  <div class="particles" id="particles"></div>
+  <div class="stars" id="stars"></div>
+
+  <main>
+  <nav class="tabbar">
+    <div class="brand">R.M.</div>
+    <div class="tab active" data-target="home"><span class="dot"></span>HOME</div>
+    <div class="tab" data-target="about"><span class="dot"></span>ABOUT.ME</div>
+    <div class="tab" data-target="stack"><span class="dot"></span>TECH.STACK</div>
+    <div class="tab" data-target="projects"><span class="dot"></span>MY.PROJECT</div>
+    <div class="tab" data-target="bots"><span class="dot"></span>AI.BOTS</div>
+    <div class="tab" data-target="faq"><span class="dot"></span>FAQ</div>
+    <div class="tab" data-target="funfacts"><span class="dot"></span>FUN.FACTS</div>
+    <div class="tab" data-target="location"><span class="dot"></span>LOCATION</div>
+    <div class="tab" data-target="guestbook"><span class="dot"></span>GUESTBOOK</div>
+    <div class="tab" data-target="contact"><span class="dot"></span>CONTACT.ME</div>
+    <span class="magic-line" id="magicLine"></span>
+  </nav>
+
+  <!-- ============ HOME ============ -->
+  <section id="home">
+    <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div>
+    <div class="content">
+      <div class="kbd">✦ currently online</div>
+      <h1 class="hero-name">R.M Erlangga</h1>
+      <div class="hero-role"><span class="kw">const</span> role = <span class="str">"Creative Developer"</span><span class="cursor-blink"></span></div>
+      <p class="hero-sub">Web ini portfolio yang ke-2 aku bikin ini karna aku belum puas dan ingin membuatnya 40% memikirkan sendiri dan 60%nya menggunakan Z.AI</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">Lihat Project</a>
+        <a href="#stack" class="btn-ghost">Tech Stack</a>
+      </div>
+      <div class="visitor-badge" id="visitorBadge">👀 menghitung pengunjung...</div>
+      <div class="scrollcue"><span class="arrow">↓</span> scroll untuk lanjut</div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="gutter"><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span></div>
+    <div class="content reveal">
+      <p class="comment-block">/** Sedikit cerita tentang aku */</p>
+      <h2 class="display">Tentang</h2>
+
+      <div class="about-grid">
+        <div class="avatar-frame">
+          <div class="avatar-ring"></div>
+          <img src="profile.jpg" alt="Foto R.M Erlangga" class="avatar-img" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-empty')">
+          <span class="avatar-fallback">RM</span>
+        </div>
+        <div>
+          <p class="about-body">
+            Aku suka <b>ngutak-atik hal baru</b> — dari sering liat orang bikin web keren jadi tertarik bikin juga  sampai eksperimen kecil yang kadang nggak jelas ujungnya mau jadi apa. Buat sekarang, fokus aku belajar bikin hal-hal yang bisa dipakai orang lain, sekecil apa pun itu.
+          </p>
+          <div class="skills">
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Belajar terus</span>
+            <span class="pill">Suka eksperimen</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="about-note"><span class="mono"></span> </p>
+    </div>
+  </section>
+
+  <!-- ============ TECH STACK ============ -->
+  <section id="stack">
+    <div class="gutter"><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span></div>
+    <div class="content reveal">
+      <p class="comment-block">// tools yang lagi aku pelajari</p>
+      <h2 class="display">Tech Stack</h2>
+      <p class="about-body">Ini bahasa & tools yang lagi aku dalemin sekarang. Angkanya cuma gambaran progres belajar, bukan sertifikasi ya 😄 </p>
+      <div class="stack-grid">
+        <div class="stack-card" style="--level:82%; --clr: var(--gold-soft);">
+          <div class="stack-top"><span class="stack-icon"></span><span class="stack-name">HTML</span></div>
+          <div class="stack-bar"><div class="stack-fill"></div></div>
+          <span class="stack-pct">82%</span>
+        </div>
+        <div class="stack-card" style="--level:75%; --clr: var(--violet-bright);">
+          <div class="stack-top"><span class="stack-icon"></span><span class="stack-name">CSS</span></div>
+          <div class="stack-bar"><div class="stack-fill"></div></div>
+          <span class="stack-pct">75%</span>
+        </div>
+        <div class="stack-card" style="--level:60%; --clr: var(--gold);">
+          <div class="stack-top"><span class="stack-icon"></span><span class="stack-name">JavaScript</span></div>
+          <div class="stack-bar"><div class="stack-fill"></div></div>
+          <span class="stack-pct">60%</span>
+        </div>
+        <div class="stack-card" style="--level:40%; --clr: var(--magenta);">
+          <div class="stack-top"><span class="stack-icon"></span><span class="stack-name">C#</span></div>
+          <div class="stack-bar"><div class="stack-fill"></div></div>
+          <span class="stack-pct">40%</span>
+        </div>
+        <div class="stack-card" style="--level:50%; --clr: #7ee787;">
+          <div class="stack-top"><span class="stack-icon"></span><span class="stack-name">Python</span></div>
+          <div class="stack-bar"><div class="stack-fill"></div></div>
+          <span class="stack-pct">50%</span>
+        </div>
+        <div class="stack-card" style="--level:25%; --clr: #ff6b6b;">
+          <div class="stack-top"><span class="stack-icon"></span><span class="stack-name">Ruby</span></div>
+          <div class="stack-bar"><div class="stack-fill"></div></div>
+          <span class="stack-pct">25%</span>
+        </div>
+        <div class="stack-card" style="--level:30%; --clr: var(--violet);">
+          <div class="stack-top"><span class="stack-icon"></span><span class="stack-name">PHP</span></div>
+          <div class="stack-bar"><div class="stack-fill"></div></div>
+          <span class="stack-pct">30%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="gutter"><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span></div>
+    <div class="content reveal">
+      <p class="comment-block">// daftar project</p>
+      <h2 class="display">Project</h2>
+      <div class="proj-list">
+        <div class="proj-card">
+          <div class="proj-head"><span class="proj-title">Project Satu</span><span class="idx">01</span></div>
+          <p class="proj-desc">bagi yang dulu melihat status whatsapp ku pasti melihat aku bikin project portfolio berwarna hitam dan disana aku bangga banget karna membuat portfolio walau masih menggunakan ai</p>
+          <div class="proj-tags"><span class="tag">web</span><span class="tag">PORTFOLIO</span></div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-head"><span class="proj-title">Project Dua</span><span class="idx">02</span></div>
+          <p class="proj-desc">dulu sempat membuat ai menggunakan node js dan memakai key dari XAi atau grok ai tapi disana gagal karna ambil key nya ribet</p>
+          <div class="proj-tags"><span class="tag">AI</span><span class="tag">NODE.JS</span></div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-head"><span class="proj-title">Project Tiga</span><span class="idx">03</span></div>
+          <p class="proj-desc">project ke 3 adalah project portfolio ke 2 dengan menggunakan ai 60% Z.AI dan sisanya memikirkan sendiri atau aku membuat programnya sendiri</p>
+          <div class="proj-tags"><span class="tag">WEB PORTFOLIO</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AI BOTS (scripted, bukan AI asli) ============ -->
+  <section id="bots">
+    <div class="gutter"><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span></div>
+    <div class="content reveal">
+      <p class="comment-block">// 5 robot iseng buat nemenin kamu explore web ini</p>
+      <h2 class="display">AI Bots</h2>
+      <p class="about-body">Robot-robot ini <b>scripted</b> (jawabannya udah disiapin), belum AI sungguhan — tapi tetep bisa diajak "ngobrol" ringan. Klik salah satu buat mulai.</p>
+
+      <div class="bot-grid" id="botGrid">
+        <div class="bot-card" data-bot="guide">
+          <div class="speech-bubble">Apa yang ingin kamu tanyakan?</div>
+          <div class="robot-figure">
+            <div class="robot-head"><span class="robot-eye"></span><span class="robot-eye"></span><span class="robot-antenna"></span></div>
+            <div class="robot-body"><span class="robot-light"></span></div>
+          </div>
+          <span class="bot-name">Robo Guide</span>
+          <span class="bot-desc">Bantu jelasin isi web ini</span>
+        </div>
+        <div class="bot-card" data-bot="fun">
+          <div class="speech-bubble">Apa yang ingin kamu tanyakan?</div>
+          <div class="robot-figure">
+            <div class="robot-head"><span class="robot-eye"></span><span class="robot-eye"></span><span class="robot-antenna"></span></div>
+            <div class="robot-body"><span class="robot-light"></span></div>
+          </div>
+          <span class="bot-name">Robo Fun</span>
+          <span class="bot-desc">Suka lawak receh</span>
+        </div>
+        <div class="bot-card" data-bot="motivator">
+          <div class="speech-bubble">Apa yang ingin kamu tanyakan?</div>
+          <div class="robot-figure">
+            <div class="robot-head"><span class="robot-eye"></span><span class="robot-eye"></span><span class="robot-antenna"></span></div>
+            <div class="robot-body"><span class="robot-light"></span></div>
+          </div>
+          <span class="bot-name">Robo Motivator</span>
+          <span class="bot-desc">Nyemangatin kamu</span>
+        </div>
+        <div class="bot-card" data-bot="tech">
+          <div class="speech-bubble">Apa yang ingin kamu tanyakan?</div>
+          <div class="robot-figure">
+            <div class="robot-head"><span class="robot-eye"></span><span class="robot-eye"></span><span class="robot-antenna"></span></div>
+            <div class="robot-body"><span class="robot-light"></span></div>
+          </div>
+          <span class="bot-name">Robo Tech</span>
+          <span class="bot-desc">Trivia dunia coding</span>
+        </div>
+        <div class="bot-card" data-bot="assistant">
+          <div class="speech-bubble">Apa yang ingin kamu tanyakan?</div>
+          <div class="robot-figure">
+            <div class="robot-head"><span class="robot-eye"></span><span class="robot-eye"></span><span class="robot-antenna"></span></div>
+            <div class="robot-body"><span class="robot-light"></span></div>
+          </div>
+          <span class="bot-name">Robo Assistant</span>
+          <span class="bot-desc">Arahin kamu ke kontak</span>
+        </div>
+      </div>
+
+      <div class="bot-chat" id="botChat">
+        <div class="bot-chat-head">
+          <span id="botChatName">Pilih robot dulu ya</span>
+          <button id="botChatClose">✕</button>
+        </div>
+        <div class="bot-chat-body" id="botChatBody"></div>
+        <div class="bot-chat-input">
+          <input type="text" id="botInput" placeholder="Ketik sesuatu..." />
+          <button id="botSend">Kirim</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <div class="gutter"><span>41</span><span>42</span><span>43</span><span>44</span></div>
+    <div class="content reveal">
+      <p class="comment-block">// pertanyaan yang sering muncul</p>
+      <h2 class="display">FAQ</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Web ini maksudnya buat apa sih?</summary>
+          <p>Ini portfolio public R.M Erlangga — tempat kumpulin project, skill yang lagi dipelajari, dan cara paling gampang buat dihubungi di web ini jika tidak on di tiktok dan WA.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Ini dibikin pakai apa?</summary>
+          <p>Cuma HTML, CSS, dan JavaScript polos — nggak pakai framework, jadi ringan dan gampang dikustomisasi dan ditambah sesuatu biar bagus dan menarik gitulah.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Robotnya beneran AI?</summary>
+          <p>Belum — jawabannya udah disiapin (scripted), bukan nyambung ke model AI beneran. Tapi tetep seru buat diajak "ngobrol" santai soalnya blom ambil key ainya wkwkw.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Boleh dicontek buat portfolio sendiri?</summary>
+          <p>Boleh banget, tinggal ganti nama, foto, project, dan link kontaknya jadi punya kamu dan juga ini FREE eitss tapi wajib ada vs code ya.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Kenapa ada bagian Guestbook?</summary>
+          <p>Biar pengunjung bisa ninggalin kesan — walau sementara ini baru kesimpen di browser masing-masing.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FUN FACTS ============ -->
+  <section id="funfacts">
+    <div class="gutter"><span>45</span><span>46</span><span>47</span><span>48</span></div>
+    <div class="content reveal">
+      <p class="comment-block">// hal-hal random tentang aku</p>
+      <h2 class="display">Fun Facts</h2>
+      <div class="fact-grid">
+        <div class="fact-card"><span class="fact-icon"></span><p>Sering ngoding sambil nemenin diri sendiri begadang kalau bosen</p></div>
+        <div class="fact-card"><span class="fact-icon"></span><p>Suka ngoprek terminal Linux walau kadang error mulu wkwkwk</p></div>
+        <div class="fact-card"><span class="fact-icon"></span><p>Cita-cita: pns tapi hobi: ngoding </p></div>
+        <div class="fact-card"><span class="fact-icon"></span><p>Lebih suka belajar sambil coba-coba langsung daripada baca teori doang</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION (aman, level kota) ============ -->
+  <section id="location">
+    <div class="gutter"><span>31</span><span>32</span><span>33</span></div>
+    <div class="content reveal">
+      <p class="comment-block">// domisili</p>
+      <h2 class="display">Lokasi</h2>
+      <div class="location-card">
+        <span class="location-icon">📍</span>
+        <div>
+          <p class="about-body">Tinggal di daerah <b>Cianjur, Jawa Barat, Indonesia</b>.</p>
+          <p class="location-note">dan aku juga sekolah di SMP AL-AZHAR 20 CIANJUR</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GUESTBOOK (lokal, per-device) ============ -->
+  <section id="guestbook">
+    <div class="gutter"><span>34</span><span>35</span><span>36</span><span>37</span></div>
+    <div class="content reveal">
+      <p class="comment-block">// tinggalin jejak</p>
+      <h2 class="display">Guestbook</h2>
+      <p class="about-body">Tulis komentar singkat di sini. <b>Catatan:</b> ini disimpan di browser kamu sendiri (belum ada server), jadi komentar cuma kelihatan di perangkat yang sama — bukan komentar publik beneran. Kalau mau komentar publik asli, aku bisa bantu arahin cara pasang widget gratis seperti Giscus/Cusdis nanti.</p>
+
+      <form class="guest-form" id="guestForm">
+        <input type="text" id="guestName" placeholder="Nama kamu" required />
+        <textarea id="guestMsg" placeholder="Tulis pesan..." required></textarea>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+      </form>
+
+      <div class="guest-list" id="guestList"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="gutter"><span>38</span><span>39</span><span>40</span></div>
+    <div class="content reveal">
+      <p class="comment-block">// ngobrol yuk di WA</p>
+      <div class="contact-call">Mau <span class="accent">ngobrol</span>?</div>
+      <a class="wa-btn" href="https://wa.me/6287873716403?text=Halo%20R.M%20Erlangga!%20Aku%20telah%20lihat%20portfolio%20kamu." target="_blank" rel="noopener">
+        💬 Chat via WhatsApp
+      </a>
+      <div class="social-row">
+        <a href="#" target="_blank" rel="noopener">github</a>
+        <a href="#" target="_blank" rel="noopener">instagram</a>
+        <a href="mailto:kamu@email.com">email</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <div class="statusbar">
+    <span>✓ dibuat dengan INDEX.HTML, STYLE.CSS dan SCRIPT.JS</span>
+    <span>© 2026 R.M Erlangga</span>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
